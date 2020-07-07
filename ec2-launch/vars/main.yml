@@ -1,0 +1,16 @@
+---
+#Enter your access and secret keys
+aws_access_key: XXX
+aws_secret_key: YYY
+#ENter your key-pair name created in EC2
+key_name: test
+#Enter the instance type for EC2
+instance_type: t2.micro
+#Enter the security group name which exists
+security_group: default
+#Enter the AMI to launch
+image: ami-08706cb5f68222d09 
+#Enter number of EC2 to be created
+count: 1
+#Enter the region for EC2 to launch
+region: ap-south-1

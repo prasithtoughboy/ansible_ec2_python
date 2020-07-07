@@ -1,0 +1,3 @@
+---
+ - name: Insatll boto3
+   shell: sudo pip install boto3

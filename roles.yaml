@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become: yes
+  gather_facts: false
+  roles:
+     - ec2-launch
+- hosts: pyservers
+  remote_user: ubuntu
+  become: yes
+  gather_facts: false
+  roles:
+     - ec2-dependency
