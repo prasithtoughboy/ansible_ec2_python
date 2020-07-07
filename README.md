@@ -8,6 +8,26 @@ The goal is to create an EC2 machine using ansible playbook and install dependec
  - Should have key pair and security group created
  - ansible and boto3 should be installed where playbook is going to run
 
+## Installtion
+
+The following are installtion for Ubuntu server for running ansible playbook
+```sh
+$ sudo apt update
+$ sudo apt install software-properties-common
+```
+Install Python and Boto3
+```sh
+$ sudo apt install python
+$ sudo apt install python-pip
+$ sudo pip install boto3
+```
+Install Ansible
+```sh
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt update
+$ sudo apt install ansible
+```
+
 ## Configuration
 1. Clone the code
 ```sh
