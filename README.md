@@ -56,8 +56,8 @@ ansible-playbook roles.yaml
 ```
 **You will see an EC2 machine created after successful completion of playbook**
 
-Login to the machine using the SSH connection string for EC2 in the console using your created key file.
-After login goto opt directoy and run the python file
+Login to the machine using the SSH connection string for EC2 in the AWS console using your created key file.
+After login goto opt directoy where the file will be located and run the python file.
 ```sh
 $ cd /opt
 $ python list_ec2_types.py
