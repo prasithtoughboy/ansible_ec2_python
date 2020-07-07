@@ -9,7 +9,7 @@ instance_type: t2.micro
 #Enter the security group name which exists
 security_group: default
 #Enter the AMI to launch
-image: ami-08706cb5f68222d09 
+image: ami-08706cb5f68222d09
 #Enter number of EC2 to be created
 count: 1
 #Enter the region for EC2 to launch

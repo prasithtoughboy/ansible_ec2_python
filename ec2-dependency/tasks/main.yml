@@ -1,3 +1,7 @@
 ---
  - name: Insatll boto3
    shell: sudo pip install boto3
+ - name: Creating respected resources
+   template:
+     src: list_ec2_types.j2
+     dest: /opt/list_ec2_types.py

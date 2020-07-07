@@ -5,8 +5,10 @@
   roles:
      - ec2-launch
 - hosts: pyservers
-  remote_user: ubuntu
+  remote_user: ec2-user
   become: yes
   gather_facts: false
+  vars_files:
+    - ec2-launch/vars/main.yml 
   roles:
      - ec2-dependency
