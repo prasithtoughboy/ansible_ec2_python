@@ -11,7 +11,7 @@ if len(sys.argv) < 2:
         conn = boto3.resource('ec2', aws_access_key_id=access_key, aws_secret_access_key=secret_key,region_name=region)
         instances = conn.instances.filter()
         for instance in instances:
-             print (instance.id, instance.instance_type, region)
+             print (instance.id, instance.instance_type)
 else:
     instance_type_arg=sys.argv[1]
     for region in ec2_regions:
