@@ -8,7 +8,7 @@ The goal is to create an EC2 machine using ansible playbook and install dependec
  - Should have key pair and security group created
  - ansible and boto3 should be installed where playbook is going to run
 
-## Installtion
+## Installation
 
 The following are installtion for Ubuntu server for running ansible playbook
 ```sh
@@ -56,7 +56,7 @@ ansible-playbook roles.yaml
 ```
 **You will see an EC2 machine created after successful completion of playbook**
 
-Login to the machine using the SSH connection string for EC2 in the AWS console using your created key file.
+Login to the machine using the SSH connection string for EC2 from AWS console using your created key file.
 After login goto opt directoy where the file will be located and run the python file.
 ```sh
 $ cd /opt
